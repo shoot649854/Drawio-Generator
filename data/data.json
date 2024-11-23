@@ -1,0 +1,132 @@
+{
+  "shapes": [
+    {
+      "id": "gcs",
+      "type": "image",
+      "value": "Google Cloud Storage",
+      "image_url": "./asset/Products & Services/Storage and Databases/cloud-storage-productcard.jpg",
+      "x": 400,
+      "y": 200,
+      "width": 120,
+      "height": 80,
+      "styles": "fillColor=#4285F4;strokeColor=#000000;"
+    },
+    {
+      "id": "angular_dashboard",
+      "type": "image",
+      "value": "Angular Dashboard",
+      "image_url": "./asset/Products & Services/Compute/AppEngine-productcard.jpg",
+      "x": 100,
+      "y": 100,
+      "width": 160,
+      "height": 80,
+      "styles": "fillColor=#DD0031;strokeColor=#000000;"
+    },
+    {
+      "id": "platform_icon",
+      "type": "image",
+      "value": "Platform Icon",
+      "image_url": "./asset/Service Cards/Frontend-Platform-Services.png",
+      "x": 140,
+      "y": 70,
+      "width": 80,
+      "height": 40,
+      "styles": "strokeColor=#000000;"
+    },
+    {
+      "id": "fastapi",
+      "type": "image",
+      "value": "FastAPI",
+      "image_url": "./asset/Products & Services/Developer Tools /cloud-deployment-manager-productcard.jpg",
+      "x": 300,
+      "y": 100,
+      "width": 120,
+      "height": 80,
+      "styles": "fillColor=#009688;strokeColor=#000000;"
+    },
+    {
+      "id": "json_data",
+      "type": "image",
+      "value": "JSON Data",
+      "image_url": "./asset/User & Device Input/database.png",
+      "x": 150,
+      "y": 220,
+      "width": 80,
+      "height": 40,
+      "styles": "fillColor=#FFFFFF;strokeColor=#000000;"
+    },
+    {
+      "id": "pdf_data",
+      "type": "image",
+      "value": "PDF Data",
+      "image_url": "./asset/User & Device Input/storage.png",
+      "x": 450,
+      "y": 220,
+      "width": 80,
+      "height": 40,
+      "styles": "fillColor=#FFFFFF;strokeColor=#000000;"
+    },
+    {
+      "id": "data_icon_annotation1",
+      "type": "image",
+      "value": "Data Icon",
+      "image_url": "./asset/Service Cards/Bucket.png",
+      "x": 530,
+      "y": 240,
+      "width": 40,
+      "height": 40,
+      "styles": "strokeColor=#000000;"
+    },
+    {
+      "id": "data_icon_annotation2",
+      "type": "image",
+      "value": "Data Icon",
+      "image_url": "./asset/Service Cards/Bucket.png",
+      "x": 540,
+      "y": 220,
+      "width": 40,
+      "height": 40,
+      "styles": "strokeColor=#000000;"
+    }
+  ],
+  "connectors": [
+    {
+      "source_id": "angular_dashboard",
+      "target_id": "fastapi",
+      "style": "endArrow=block;endFill=1;strokeColor=#000000;"
+    },
+    {
+      "source_id": "fastapi",
+      "target_id": "gcs",
+      "style": "endArrow=block;endFill=1;strokeColor=#000000;"
+    },
+    {
+      "source_id": "angular_dashboard",
+      "target_id": "json_data",
+      "style": "endArrow=block;endFill=1;strokeColor=#FF5722;"
+    },
+    {
+      "source_id": "gcs",
+      "target_id": "pdf_data",
+      "style": "endArrow=block;endFill=1;strokeColor=#9E9E9E;"
+    }
+  ],
+  "annotations": [
+    {
+      "value": "Stores JSON and PDF data",
+      "x": 530,
+      "y": 240,
+      "width": 200,
+      "height": 40,
+      "styles": "textColor=#000000;align=center;"
+    },
+    {
+      "value": "Stores PDF data",
+      "x": 540,
+      "y": 220,
+      "width": 200,
+      "height": 40,
+      "styles": "textColor=#000000;align=center;"
+    }
+  ]
+}
